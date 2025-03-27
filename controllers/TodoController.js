@@ -8,8 +8,8 @@ exports.getAllTodo = (req,res) => {
 //create new
 
 exports.AddTodo = (req,res) => {
-    const {tsk} = req.body
-    const newTodo = {id:todos.length+1,tsk,done:false}
+    const {task} = req.body
+    const newTodo = {id:todos.length+1,task,done:false}
     todos.push(newTodo)
     res.send(todos)
 }
